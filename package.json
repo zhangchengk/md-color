@@ -1,0 +1,52 @@
+{
+  "name": "md-color",
+  "displayName": "md-color",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.randomColor"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.randomColor",
+        "title": "randomColor"
+      }
+    ],
+    "keybindings": [
+      {
+          "key": "ctrl+1",
+          "command": "extension.randomColor",
+          "when": "editorTextFocus"
+      },
+      {
+        "key": "cmd+1",
+        "command": "extension.randomColor",
+        "when": "editorTextFocus"
+      }
+  ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.53.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
