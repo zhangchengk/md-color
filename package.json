@@ -4,6 +4,7 @@
   "description": "使用MarkDown写作时，可以使用`<font color=red>内容/font>`给文本添加颜色。md-color就是针对此操作的偷懒工具",
   "publisher":"PandaCheng",
   "repository": "https://github.com/KuKuDeCheng/md-color",
+  "icon": "img/logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.53.0"
