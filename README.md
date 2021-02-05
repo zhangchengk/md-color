@@ -1,6 +1,6 @@
 # md-color 
 
-使用MarkDown写作时，可以使用`<font color=red>内容/font>`给文本添加颜色。md-color就是针对此操作的偷懒工具。
+使用MarkDown写作时，可以使用`<font color=red>内容</font>`给文本添加颜色。md-color就是针对此操作的偷懒工具。
 
 ## 使用方法
 
