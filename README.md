@@ -26,7 +26,7 @@
 
 ## 效果图
 
-![](./img/效果.png)
+![](/img/效果.png)
 
 ## Git地址
 
@@ -34,4 +34,4 @@ https://github.com/KuKuDeCheng/md-color
 
 ## 联系方式
 
-![](./img/wechat.jpg)
+![](/img/wechat.jpg)

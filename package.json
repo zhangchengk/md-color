@@ -1,7 +1,7 @@
 {
   "name": "md-color",
   "displayName": "md-color",
-  "description": "",
+  "description": "使用MarkDown写作时，可以使用`<font color=red>内容/font>`给文本添加颜色。md-color就是针对此操作的偷懒工具",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.53.0"
