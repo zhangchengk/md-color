@@ -1,0 +1,16 @@
+- <font color=red>红色</font>
+- <font color=green>绿色</font>
+- <font color=orange>橘色</font>
+- <font color=blue>蓝色</font>
+- <font color=purple>紫色</font>
+- <font color=brown>褐色, 茶色</font>
+- <font color=chocolate>红褐色, 赭石色</font>
+- <font color=camel>驼色</font>
+- <font color=amber>琥珀色</font>
+- <font color=plum>杨李色</font>
+- <font color=royalblue>宝蓝色</font>
+- <font color=yellowgreen>黄绿色</font>
+- <font color=brown>咖啡色</font>
+- <font color=seagreen>海绿色</font>
+- <font color=tomato>番茄色</font>
+- <font color=yellowgreen>土黄色</font>

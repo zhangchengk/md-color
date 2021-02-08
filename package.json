@@ -5,7 +5,7 @@
   "publisher":"PandaCheng",
   "repository": "https://github.com/KuKuDeCheng/md-color",
   "icon": "img/logo.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -13,28 +13,60 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.randomColor"
+    "onCommand:extension.randomColor",
+    "onLanguage:markdown"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
         "command": "extension.randomColor",
-        "title": "randomColor"
+        "title": "md-color: randomColor"
+      },
+      {
+        "command": "extension.md-color-red",
+        "title": "md-color: red"
+      },
+      {
+        "command": "extension.md-color-green",
+        "title": "md-color: green"
+      },
+      {
+        "command": "extension.md-color-orange",
+        "title": "md-color: orange"
       }
     ],
     "keybindings": [
       {
           "key": "ctrl+1",
           "command": "extension.randomColor",
-          "when": "editorTextFocus"
+          "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown"
       },
       {
         "key": "cmd+1",
         "command": "extension.randomColor",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown"
       }
-  ]
+    ],
+    "menus": {
+        "editor/context": [
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-red",
+            "group": "navigation"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-green",
+            "group": "navigation"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-orange",
+            "group": "navigation"
+          }
+        ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
