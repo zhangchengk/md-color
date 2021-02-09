@@ -5,7 +5,7 @@
   "publisher":"PandaCheng",
   "repository": "https://github.com/KuKuDeCheng/md-color",
   "icon": "img/logo.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -21,19 +21,63 @@
     "commands": [
       {
         "command": "extension.randomColor",
-        "title": "md-color: randomColor"
+        "title": "随机颜色"
       },
       {
         "command": "extension.md-color-red",
-        "title": "md-color: red"
+        "title": "红色"
       },
       {
         "command": "extension.md-color-green",
-        "title": "md-color: green"
+        "title": "绿色"
       },
       {
         "command": "extension.md-color-orange",
-        "title": "md-color: orange"
+        "title": "橘色"
+      },
+      {
+        "command": "extension.md-color-blue",
+        "title": "蓝色"
+      },
+      {
+        "command": "extension.md-color-purple",
+        "title": "紫色"
+      },
+      {
+        "command": "extension.md-color-brown",
+        "title": "咖啡色"
+      },
+      {
+        "command": "extension.md-color-chocolate",
+        "title": "红褐色,赭石色"
+      },
+      {
+        "command": "extension.md-color-camel",
+        "title": "驼色"
+      },
+      {
+        "command": "extension.md-color-amber",
+        "title": "琥珀色"
+      },
+      {
+        "command": "extension.md-color-plum",
+        "title": "杨李色"
+      },
+      {
+        "command": "extension.md-color-royalblue",
+        "title": "宝蓝色"
+      },
+      {
+        "command": "extension.md-color-yellowgreen",
+        "title": "黄绿色"
+      },
+      {
+        "command": "extension.md-color-seagreen",
+        "title": "海绿色"
+      },
+      {
+        "command": "extension.md-color-tomato",
+        "title": "番茄色"
       }
     ],
     "keybindings": [
@@ -52,21 +96,94 @@
         "editor/context": [
           {
             "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
-            "command": "extension.md-color-red",
+            "submenu": "md-color",
             "group": "navigation"
+          }
+        ],
+        "md-color": [
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.randomColor",
+            "group": "navigation@0"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-red",
+            "group": "navigation@1"
           },
           {
             "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
             "command": "extension.md-color-green",
-            "group": "navigation"
+            "group": "navigation@2"
           },
           {
             "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
             "command": "extension.md-color-orange",
-            "group": "navigation"
+            "group": "navigation@3"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-blue",
+            "group": "navigation@4"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-purple",
+            "group": "navigation@5"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-brown",
+            "group": "navigation@6"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-chocolate",
+            "group": "navigation@7"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-camel",
+            "group": "navigation@8"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-amber",
+            "group": "navigation@9"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-plum",
+            "group": "navigation@10"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-royalblue",
+            "group": "navigation@11"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-yellowgreen",
+            "group": "navigation@12"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-seagreen",
+            "group": "navigation@13"
+          },
+          {
+            "when": "editorTextFocus && editorHasSelection && resourceLangId == markdown",
+            "command": "extension.md-color-tomato",
+            "group": "navigation@14"
           }
         ]
-    }
+    },
+    "submenus": [
+      {
+        "id": "md-color",
+        "label": "md-color"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",

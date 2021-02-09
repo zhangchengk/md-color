@@ -4,7 +4,9 @@
 
 ## 使用方法
 
-在Markdown文件中选中一段文本内容，使用快捷键`ctrl+1`或者`cmd+1`，md-color会随机颜色为这段文本添加`<font color>`属性。经过测试，选中了展示效果较好的颜色作为随机颜色：
+在Markdown文件中选中一段文本内容，使用快捷键`ctrl+1`或者`cmd+1`，md-color会随机颜色为这段文本添加`<font color>`属性。或者右键在菜单`md-color`中指定颜色属性。
+
+经过测试，选中了展示效果较好的颜色作为随机颜色：
 
 ![](https://kukudecheng.github.io/md-color/img/color.png)
 
